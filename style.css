@@ -410,3 +410,53 @@ label{
     color: var(--neutral-cool-gray);
     line-height: 23px;
 }
+.mobile{
+    display: none !important;
+}
+
+@media (width < 800px){
+    body{
+        margin: 0 !important;
+        align-items: stretch;
+    }
+    .desktop{
+        display:none!important;
+    }
+    .main-body{
+       margin-top: -80px;
+       padding-right: 30px;
+    }
+    .side-bar{
+        width: 100%;
+        height: 20%;
+        margin-top: -40px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-bar-div{
+        margin-top: 60%;
+        flex-direction: row;
+    }
+    .info{
+        display: none;
+    }
+    .mobile{
+        display: flex !important;
+        min-width: 100%;
+        max-width: 100%;
+        height: 300px;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    #page-five .main-body{
+        margin-top: 10%;
+    }
+
+}
